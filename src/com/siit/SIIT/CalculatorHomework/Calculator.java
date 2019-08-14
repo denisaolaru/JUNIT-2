@@ -6,7 +6,6 @@ public class Calculator {
     }
 
 
-
     public int calculateExpression ( String expression ) {
 
         String splitBySpace[] = new String[20];
@@ -38,7 +37,7 @@ public class Calculator {
 
         }
         total = getTotal ( numbers , plusMinus );
-        return ( total );
+        return (total);
     }
 
     public void transformTheNumbers ( String[] splitBySpace , int[] numbers , int j , int i ) {
