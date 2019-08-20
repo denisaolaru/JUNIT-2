@@ -1,14 +1,13 @@
 import com.siit.SIIT.CalculatorHomework.Calculator;
 import org.junit.*;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+
 
 import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
 
-@RunWith(Parameterized.class)
+
 public class CalculatorTest {
     private String expression;
     private Calculator calculator;
@@ -40,10 +39,7 @@ public class CalculatorTest {
         System.out.println ( "after" );
     }
 
-    @Parameterized.Parameters
-    public static Collection input () {
-        return Arrays.asList ( new Object[][]{{"12 mm + 10 mm" , 22} , {"12 mm + 11 mm" , 23}} );
-    }
+
 
     @Test
     public void testWithParameters () {
